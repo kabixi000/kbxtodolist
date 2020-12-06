@@ -17,13 +17,13 @@ function pClick() {
   alert("pタグクリック！HTMLでonclick属性書いたよ！");
 }
 
-const stylesheet = document.styleSheets.item(0);
 
 // 上で定義したid_4はここでも使えるよ！
 id_4.onclick = function () {
   //第2引数は、「CSSの何番目のルールにするか」。0始まりの番号。
-  stylesheet.insertRule("#id_4 {font-size: 20px;}", 0);
-  stylesheet.insertRule("#id_4 {background-color: pink;}", stylesheet.cssRules.length);
+  //なんでstyleSheets[1]かは謎
+  document.styleSheets[1].insertRule("#id_4 {font-size: 20px;}",0);
+  document.styleSheets[1].insertRule("#id_4 {background-color: pink;}",0);
 }
 
 

@@ -19,6 +19,7 @@ html {
 box-sizing: border-box;
 }
 
+
 .btn,
 a.btn,
 button.btn {
@@ -51,6 +52,6 @@ border-bottom: 5px solid #ccc100;
 a.btn--yellow:hover {
 margin-top: 3px;
 color: #000;
-background: #fff20a;
-border-bottom: 2px solid #ccc100;
+background: #ff8d0a;
+border-bottom: 2px solid #727041;
 }
