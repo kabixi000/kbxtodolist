@@ -14,13 +14,25 @@
     <h1>To Do Lister</h1>
     <p>ToDoListをつくるよ</p>
 
-    <a id="id_1" href="" class="btn btn--yellow btn--cubic">Add card！</a>
+    <!--入力フォーム-->
+    <form action="#" method="post">
+      <p>PrerequisiteTask：<input type="text" name="PrerequisiteTask"></p>
+      <p>TaskName        ：<input type="text" name="TaskName"></p>  
+      <p>TaskContent     ：<input type="text" name="TaskContent"></p> 
+      <p>UUID            ：<input type="text" name="UUID"></p>
 
+      <p><input type="button" value="Add card" id="button2"></p>
+
+
+    <!--JS動作テスト用-->
+    <a id="id_1" href="" class="btn btn--yellow btn--cubic">CSS test button！</a><!--CSSボタン-->
     <p id="id_1">1. JS側にonclick書いてクリックイベント発火。</p>
     <p id="id_2">2. JSでは無名関数も使えるよ！</p>
     <p onclick="pClick()">3. HTMLでonclick属性書いた。クリックしてみて！</p>
     <p id="id_4">5. クリックするとCSS追加されるよ！</p>
+    <!--JS動作テスト用ここまで-->
 
+    <!--読み込み関数-->
     <script src="./asset/JavaScript/index.js"></script>
   </body>
 
